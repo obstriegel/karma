@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/486/branches/filebrowser_3/filebrowser
+END
+functions.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/475/branches/filebrowser_3/filebrowser/functions.py
+END
+base.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/472/branches/filebrowser_3/filebrowser/base.py
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/403/branches/filebrowser_3/filebrowser/LICENSE
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/476/branches/filebrowser_3/filebrowser/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/403/branches/filebrowser_3/filebrowser/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/476/branches/filebrowser_3/filebrowser/settings.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/403/branches/filebrowser_3/filebrowser/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/472/branches/filebrowser_3/filebrowser/urls.py
+END
+decorators.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/472/branches/filebrowser_3/filebrowser/decorators.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/472/branches/filebrowser_3/filebrowser/forms.py
+END
+fields.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/472/branches/filebrowser_3/filebrowser/fields.py
+END

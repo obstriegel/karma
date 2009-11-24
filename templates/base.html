@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>{% block title %}karma{% endblock %}</title>
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+	
+		<link rel="stylesheet" href="/media/lib/jquery-ui-theme/jquery-ui-1.7.2.custom.css" type="text/css" media="screen" />
+		
+		<script src="/media/js/main.js"></script>
+		<script src="/media/js/account.js"></script>
+		<script src="/media/js/item.js"></script>
+		<script src="/media/js/search.js"></script>
+		
+		<link rel="stylesheet" href="/media/css/main.css" type="text/css" media="screen" />
+
+		{% block extrahead %}{% endblock %}
+	</head>
+
+	<body>
+
+		<header>
+			<!-- <a href="/">karma</a> -->
+			<nav>
+			{% if user.is_authenticated %}
+				<a href="{% url account_logout %}">Logout</a>
+			{% else %}
+				{#<a href="{% url account_login %}">Login</a>#}
+				<a id="id_account_login_link" href="#">Login</a>
+			{% endif %}
+				<a href="{% url item_add %}">Add</a>
+			</nav>
+		</header>
+
+		<article>
+			<section>
+				<img src="/media/images/logo.png" alt="karma" title="karma" />
+				{% include 'search/snippet_search.html' %}
+			</section>
+			<section>
+				{% block content %}{% endblock %}
+			</section>
+		</article>
+
+		<footer>
+		</footer>
+
+		{% include 'account/snippet_login_dialog.html' %}
+
+	</body>
+
+</html>

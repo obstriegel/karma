@@ -1,0 +1,14 @@
+from settings_live import *
+
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+DATABASE_ENGINE = 'mysql'
+DATABASE_NAME = 'karma'
+DATABASE_USER = 'root'
+DATABASE_PASSWORD = ''
+
+SECRET_KEY = ''
+
+SERVE_MEDIA = True
+FILEBROWSER_DEBUG = True

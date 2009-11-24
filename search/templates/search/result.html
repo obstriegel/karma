@@ -1,0 +1,10 @@
+<ul>
+	{% for hit in hits %}
+	<li>
+		<a href="{% url item_view hit.id %}">{{ hit.name }}</a>: {{ hit.description }}
+	{% if hit.category_set.all %}
+		({% for c in hit.category_set.all %}{{ c }}{% if not forloop.last %}, {% endif %}{% endfor %}) 			
+	{% endif %}
+	</li>
+	{% endfor %}
+</ul>
