@@ -47,10 +47,24 @@ jQuery(document).ready(function() {
 
 	jQuery('#id_account_login_link').click(account_login_show);
 
+	// Catch enter key on username input
+	// Set focus on password input and
+	// return false (to prevent safari from submitting form)
+	jQuery('#id_account_login_username').keydown(function(event) {
+		if(event.keyCode == 13) {
+			jQuery('#id_account_login_password').focus();
+			return false;
+		}
+	});
+
+	// Catch enter key on password input
+	// Trigger login button ui widget and
+	// return false (to prevent safari from submitting form)
 	jQuery('#id_account_login_password').keydown(function(event) {
 		if(event.keyCode == 13) {
 			dlg = jQuery('#id_account_login_dialog');
 			dlg.dialog('option', 'buttons')['Login'].apply(dlg);
+			return false;
 		}
 	});
 
