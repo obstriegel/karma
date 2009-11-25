@@ -14,8 +14,8 @@ jQuery(document).ready(function() {
 	jQuery('#id_item_add_submit').click(function() {
 
 		// Get input values
-		name = jQuery('#id_name').attr('value');
-		desc = jQuery('#id_description').attr('value');
+		name = jQuery('#id_item_add_form #id_item_name').attr('value');
+		desc = jQuery('#id_item_add_form #id_item_description').attr('value');
 		
 		// Send value in add inputs to ajax add
 		jQuery.postJSON('/item/api/add/', {name: name, description: desc},
