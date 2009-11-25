@@ -18,6 +18,8 @@
 		<script src="/media/js/search.js"></script>
 		
 		<link rel="stylesheet" href="/media/css/main.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/media/css/item.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/media/css/search.css" type="text/css" media="screen" />
 
 		{% block extrahead %}{% endblock %}
 	</head>
@@ -25,15 +27,13 @@
 	<body>
 
 		<header>
-			<!-- <a href="/">karma</a> -->
 			<nav>
 			{% if user.is_authenticated %}
-				<a href="{% url account_logout %}">Logout</a>
+				<a href="{% url account_logout %}" class="link-button ui-widget-content ui-corner-all">Logout</a>
 			{% else %}
-				{#<a href="{% url account_login %}">Login</a>#}
-				<a id="id_account_login_link" href="#">Login</a>
+				<a href="#" id="id_account_login_link" class="link-button ui-widget-content ui-corner-all">Login</a>
 			{% endif %}
-				<a href="{% url item_add %}">Add</a>
+				<a href="{% url item_add %}" class="link-button ui-widget-content ui-corner-all">Add</a>
 			</nav>
 		</header>
 

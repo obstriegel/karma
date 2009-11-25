@@ -9,4 +9,9 @@ jQuery.postJSON = function(url, data, callback) { jQuery.post(url, data, callbac
 
 jQuery(document).ready(function() {
 
+	jQuery('.link-button').hover(
+		function() { jQuery(this).addClass('ui-state-hover'); },
+		function() { jQuery(this).removeClass('ui-state-hover'); }
+	);
+
 });

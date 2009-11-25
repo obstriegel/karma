@@ -10,7 +10,7 @@ def view(request, id):
 	return render_to_response('item/view.html', {'item': item}, context_instance=RequestContext(request))
 
 def add(request):
-	form = ItemAddForm()
+	form = ItemAddForm(auto_id='id_item_%s')
 	return render_to_response('item/add.html', {'form': form}, context_instance=RequestContext(request))
 
 from django.utils import simplejson
